@@ -185,7 +185,7 @@ function ShowQuestion() {
     $('.option').empty();
     var Options = ['A', 'B', 'C', 'D'].sort(() => Math.random() - 0.5);
     $('#question_text').text((N + 1) + '. ' + Questions[N].question)
-    $('#question_img').attr('alt', Questions[N].question).attr('src', '../media/question/' + Questions[N].img + '.png');
+    $('#question_img').attr('alt', Questions[N].question).attr('src', './media/question/' + Questions[N].img + '.png');
     $('#' + Options[0]).text(Questions[N].answer).append($('<sub>').text(Questions[N].subscript));
     var sortedanswer = RandomArray(OtherAnswer);
     filteredanswer = [];
@@ -239,7 +239,7 @@ function ShowResult() {
         var result_no = $('<div>').addClass('col-12').addClass('col-sm-12').addClass('result_no');
         result_no.append($('<h1>').text(String(i + 1) + '.'));
         var result_img = $('<div>').addClass('col-10').addClass('col-sm-12').css('text-align', 'center').css('height', '30vh').css('display', 'flex').css('align-items', 'center').css('margin-bottom', '2vh');
-        result_img.append($('<img>').addClass('result_img').attr('src', '../media/question/' + Questions[i].img + '.png'));
+        result_img.append($('<img>').addClass('result_img').attr('src', './media/question/' + Questions[i].img + '.png'));
         var result_userans = $('<div>').addClass('col-6').addClass('col-sm-6').addClass('result_userans').css('text-align', 'center');
         if (UserAnswer[i] == Questions[i].answer + Questions[i].subscript) {
             result_userans.append($('<h1>').text(UserAnswer[i].charAt(0)).css('color', 'goldenrod').append($('<sub>').text(UserAnswer[i].charAt(1) + UserAnswer[i].charAt(2))));
