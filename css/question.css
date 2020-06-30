@@ -1,0 +1,44 @@
+main {
+    padding-top: 5vh;
+}
+
+.option {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.score {
+    border-style: solid;
+}
+
+.result_detail {
+    border-style: solid;
+}
+
+.result_userans {
+    border-top: solid;
+    border-bottom: solid;
+    border-right: solid;
+}
+
+.result_dataans {
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.result_img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+}
+
+.solution {
+    text-align: center;
+    border-radius: unset;
+    border: unset;
+    padding: .575rem .75rem;
+}
